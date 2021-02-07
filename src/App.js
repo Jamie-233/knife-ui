@@ -1,20 +1,19 @@
-// import logo from './logo.svg';
-import React, { useState } from 'react';
+import React from 'react';
 import Button from './Button';
 import useColorSwitch from './useColorSwitch';
+// import logo from './logo.svg';
 
 import './App.css';
 
 function App() {
   // const [color, setColor] = useState('#ff0000')
-  // 定义 Hooks 是为了代码复用
-  const [color, handleButton1Click] = useColorSwitch();
-  const [color2, handleButton2Click] = useColorSwitch('#0000ff', '#ff00ff');
-
   // const handleButton2Click = () => {
   //   console.log('btn2');
   // }
 
+  const [color, handleButton1Click] = useColorSwitch();
+  const [color2, handleButton2Click] = useColorSwitch('#0000ff', '#ff00ff');
+  
   return (
    <div>
       <Button width="120px" onClick={handleButton1Click} label="按钮" >
