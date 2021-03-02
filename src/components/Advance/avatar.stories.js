@@ -5,11 +5,12 @@ import face2 from "../../assets/images/face-male-2.jpg";
 import face3 from "../../assets/images/face-male-3.jpg";
 import face4 from "../../assets/images/face-male-4.jpg";
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default {
+const config = {
   title: "Avatar",
   component: Avatar,
 };
+
+export default config;
 
 export const Default = () => {
   return <Avatar src={face1} size="48px" />;
