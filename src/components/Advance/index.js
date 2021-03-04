@@ -15,8 +15,8 @@ function Avatar({
       {status && (
         <StatusIcon status={status} size={statusIconSize}></StatusIcon>
       )}
-      <AvatarClip>
-        <AvatarImage src={face1} alt="" />
+      <AvatarClip size={size}>
+        <AvatarImage src={src} alt="" />
       </AvatarClip>
     </StyledAvatar>
   );

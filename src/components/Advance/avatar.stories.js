@@ -26,3 +26,13 @@ export const Sizes = () => {
     </div>
   );
 };
+
+export const WithStatus = () => {
+  return (
+    <div>
+      <Avatar src={face1} status="online" />
+      <Avatar src={face2} status="offline" />
+      <Avatar src={face3} status="offline" size="72px" statusIconSize="12px" />
+    </div>
+  );
+};
