@@ -37,6 +37,7 @@ const StatusIcon = styled.div`
     }}
   }
 `;
+
 const AvatarClip = styled.div`
   width: ${({ size }) => size};
   height: ${({ size }) => size};
@@ -53,4 +54,8 @@ const AvatarImage = styled.img`
 
 export default StyledAvatar;
 
-export { StatusIcon, AvatarClip, AvatarImage };
+export {
+  StatusIcon,
+  AvatarClip,
+  AvatarImage
+};
